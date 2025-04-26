@@ -1,26 +1,31 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Node-webkit-based module test</title>
-<script>
-function nwModuleTest(){
-   var util = require('util');
-   var moduleFolder = require('nw.gui').App.argv[0];
-   try {
-      require(moduleFolder);
-   } catch(e) {
-      if( process.platform !== 'win32' ){
-         util.log('nw-pre-gyp error:');
-         util.log(e.stack);
-      }
-      process.exit(1);
-   }
-   process.exit(0);
-}
-</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Medi - Healthcare</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body onload="nwModuleTest()">
-<h1>Node-webkit-based module test</h1>
+<body>
+  <header class="navbar">
+    <div class="logo">Medi</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="service.html">Services</a>
+      <a href="Reminder.html">Reminder</a>
+      <a href="contact.html">Contact</a>
+      <a href="signup.html">Signup</a>
+    </nav>
+  </header>
+  <div class="hero">
+    <div class="hero-content">
+        <h1>Healthcare for a <br> Better Tomorrow</h1>
+        <hr class="underline"/>
+        <p>Compassionate Care, Advanced Medicine</p>
+        <a href="https://r.search.yahoo.com/_ylt=Awr1QjH7Uwxo4ZggQgTnHgx.;_ylu=Y29sbwMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1745667196/RO=10/RU=https%3a%2f%2fgithub.com%2fPjanhavi24%2findian_medicines_api/RK=2/RS=tP4MDFcs1o.ixz5n9fMfsJuLDv0-" class="btn">READ MORE</a>
+        </div>
+    </div>
+</div>
 </body>
 </html>
